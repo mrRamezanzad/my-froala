@@ -1,2 +1,2 @@
 var editor = new FroalaEditor('#example')
-document.querySelector(".fr-wrapper div").style.display = "none"
+document.querySelector("#example .fr-wrapper div").style.display = "none"
