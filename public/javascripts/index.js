@@ -4,6 +4,6 @@
 $(document).ready(async () => {
 
     var editor = await new FroalaEditor('#example')
-    $("example").child(".fr-wrapper div").remove()
+    $("example").children(".fr-wrapper div").remove()
     
 })
