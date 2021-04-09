@@ -1,2 +1,11 @@
 var editor = new FroalaEditor('#example')
-document.querySelector("#example .fr-wrapper div").style.display = "none"
+
+document.onreadystatechange = function () {
+    var state = document.readyState;
+    if (state == 'interactive') {
+        console.log("getting document ready");
+    } else if (state == 'complete') {
+        document.querySelector("#example .fr-wrapper div").style.display = "none"
+
+    }
+  }​;
