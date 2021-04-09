@@ -1,10 +1,9 @@
-var editor = new FroalaEditor('#example')
+// var editor = new FroalaEditor('#example')
 
 
-$(document).ready(() => {
+$(document).ready(async () => {
 
-    // your page initialization code here
-    // the DOM will be available here
+    var editor = await new FroalaEditor('#example')
     $("example").child(".fr-wrapper div").remove()
     
 })
